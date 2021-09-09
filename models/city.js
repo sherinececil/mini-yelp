@@ -1,9 +1,8 @@
-import mongoose from 'mongoose';
+import mongoose from "mongoose";
 
-const CitySchema = new mongoose.Schema  ({
-    name: { type: String, required: true },
-  }
-);
+const CitySchema = new mongoose.Schema({
+  name: { type: String },
+});
 
-const City = mongoose.model("City", CitySchema)
+const City = mongoose.model("city", CitySchema);
 export default City;
