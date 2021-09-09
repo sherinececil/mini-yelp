@@ -1,0 +1,13 @@
+POST http://localhost:5000/restaurants
+Content-Type: application/json
+
+{
+    "restaurant_name": "Vapiano",
+    "price_range": "cheap",
+    "lat": 12344.00,
+    "lnt": 55.009,
+    "phone": "1234567",
+    "image": "https://blablabla.com",
+    "rating": "5/10",
+    "website": "https://blablabla.com"
+  }
