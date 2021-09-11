@@ -1,9 +1,8 @@
-import mongoose from 'mongoose';
+import mongoose from "mongoose";
 
-const TagSchema = new mongoose.Schema  ({
-    name: { type: String, required: true },
-  }
-);
+const TagSchema = new mongoose.Schema({
+  name: { type: String, required: true },
+});
 
-const Tag = mongoose.model("Tag", TagSchema)
+const Tag = mongoose.model("tag", TagSchema);
 export default Tag;
