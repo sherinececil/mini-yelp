@@ -14,8 +14,8 @@ export async function getOneByID(request, response) {
   try {
     const { query } = request.params;
     console.log(query);
-    // const query = { id: "610c65326b673783aff3b76d" };
-    const result = await Restaurant.findOne(query).populate("restaurant");
+    // const query = { id: "613a7cefcab2fc2c21a15496" };
+    const result = await Restaurant.findOne(query).populate("city").populate("tag");
     // console.log(query.cuisine);
     response.json(result);
   } catch (error) {
@@ -33,3 +33,4 @@ export async function createOne(request, response) {
     response.status(400).json({ message: error.message });
   }
 }
+

@@ -3,6 +3,8 @@ Content-Type: application/json
 
 {
     "restaurant_name": "FatBurger",
+    "city": "613c6e7bfd82b7728eec6027",
+    "tag": "613a7a289641bc46c482dbb2",
     "price_range": "cheap",
     "lat": 34.0522,
     "lnt": 118.2437,
